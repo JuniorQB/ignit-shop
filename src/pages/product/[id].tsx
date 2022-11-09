@@ -27,7 +27,7 @@ export default function Product({product}: ProductProps) {
   }
   async function handleByProduct(){
     console.log(product.defaultPriceId)
-    /*try {
+    try {
       setIsCreateChekcoutSession(true)
       const response = await axios.post('/api/checkout', {
         priceId:  product.defaultPriceId
@@ -41,7 +41,7 @@ export default function Product({product}: ProductProps) {
       // Datadog  / Sentry
       setIsCreateChekcoutSession(false)
       alert('Falha ao redirecionar')
-    }*/
+    }
   }
 
 
